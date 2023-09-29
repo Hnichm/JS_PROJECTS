@@ -4,3 +4,56 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #162116, #3bc381);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 1rem;
+  background: rgba(235, 0, 255, 0.15);
+  width: 75rem;
+}
+
+span {
+  padding: 1rem;
+}
+
+.clock {
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+  font-size: 10rem;
+}
+
+.clock .hours::after {
+  content: "Hours";
+  position: relative;
+  font-size: 1.25rem;
+  left: -7rem;
+  bottom: -1.55rem;
+}
+
+.clock .minutes::after {
+  content: "Minutes";
+  position: relative;
+  font-size: 1.25rem;
+  left: -7.5rem;
+  bottom: -1.55rem;
+}
+
+.clock .seconds::after {
+  content: "Seconds";
+  position: relative;
+  font-size: 1.25rem;
+  left: -7.5rem;
+  bottom: -1.55rem;
+}
