@@ -42,6 +42,7 @@ function generateComputerChoice() {
 }
 
 function determineWinner(userChoice, computerChoice) {
+  // if / else chain, should use switch next time. Also lots of redundant code, can make this more compact next time.
   if (userChoice === computerChoice) {
     return "Draw";
   }
