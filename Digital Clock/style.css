@@ -8,6 +8,7 @@
 .hero {
   width: 100%;
   min-height: 100vh;
+  position: relative;
   background: linear-gradient(90deg, #162116, #3bc381);
   color: #fff;
   display: flex;
@@ -19,12 +20,27 @@
   display: inline-flex;
   justify-content: center;
   border-radius: 1rem;
-  background: rgba(235, 0, 255, 0.15);
+  background: rgba(56, 76, 83, 0.15);
   width: 75rem;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  position: relative;
 }
 
 span {
   padding: 1rem;
+}
+
+.decoration-left {
+  position: absolute;
+  background: rgba(112, 163, 139, 0.659);
+  width: 7rem;
+  height: 7rem;
+  z-index: 1;
+  top: 12rem;
+  left: 8rem;
+  border-radius: 1rem;
+  filter: drop-shadow(0.25rem 0.25rem 0.5rem #109e55);
 }
 
 .clock {
