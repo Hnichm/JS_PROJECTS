@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let particlesArray = [];
-const numberOfParticles = 400;
+const numberOfParticles = 500;
 
 // measure title element
 let titleElement = document.getElementById("title1");
@@ -21,7 +21,7 @@ class Particle {
     this.y = y;
     this.size = Math.random() * 8 + 1;
     this.weight = Math.random() * 5 + 1;
-    this.directionX = 2;
+    this.directionX = 1.25;
   }
   update() {
     if (this.y > canvas.height) {
@@ -45,7 +45,7 @@ class Particle {
     }
   }
   draw() {
-    ctx.fillStyle = "lightblue";
+    ctx.fillStyle = "rgba(131, 92, 161)";
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.closePath();
